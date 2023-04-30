@@ -1,0 +1,165 @@
+/* Global styles */
+body {
+     margin: 0;
+  
+     font-family: sans-serif;
+     color: white;
+     background-image: linear-gradient(to right, black, lightblue);
+   }
+   
+
+   #contact-section {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     height: 100vh;
+     justify-content: center;
+     background-color: #0b0a0a;
+   }
+   
+   form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 50%;
+   }
+   
+   label {
+     margin-top: 10px;
+     font-weight: bold;
+   }
+   
+   input,
+   textarea {
+     width: 100%;
+     padding: 10px;
+     margin-top: 5px;
+     margin-bottom: 10px;
+     border: none;
+     border-radius: 5px;
+   }
+   
+   textarea {
+     height: 150px;
+   }
+   
+   button {
+     background-color: #4CAF50;
+     color: white;
+     padding: 10px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+   }
+   
+   button:hover {
+     background-color: #3e8e41;
+   }
+   
+
+   .intro {
+     display: flex;
+     padding-top: 2rem;
+     padding-bottom: 2rem;
+     padding-left: 4rem;
+     padding-right: 2rem;
+     justify-content: center;
+     align-items: center;
+     border-radius: 10px;
+     background: rgba(255, 255, 255, 0.1);
+     backdrop-filter: blur(10px);
+   }
+   
+   .intro-text {
+     color: #fff;
+     font-size: 2.5rem;
+     text-align: left;
+     line-height: 1.5;
+     margin: 0;
+     padding: 0;
+     text-shadow: 1px 1px rgba(251, 253, 255, 0.6);
+   }
+   
+   
+   #skills-section {
+     height: 100%;
+     background-color: #101010;
+   }
+   
+   .skills-container {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 10rem;
+     padding: 5rem;
+     height: 100%;
+   }
+   
+   .skill-item {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 70%;
+     width: 25%;
+     border-radius: 20px;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+     background-color: rgb(31, 31, 31);
+     padding: 15px;
+   }
+   
+   .skill-item h3 {
+     font-size: 2em;
+     margin-bottom: 10px;
+     font-family: 'Montserrat', sans-serif;
+     color: #faf6f6;
+   }
+   
+   .skill-item p {
+     font-size: 3em;
+     font-weight: bold;
+     font-family: 'Montserrat', sans-serif;
+     color: #6e92c6;
+   }
+   
+
+   @media only screen and (max-width: 800px) {
+     /* Add styles for mobile devices here */
+
+     .intro-text {
+          font-size: 1.3rem;
+     }
+
+     #skills-section {
+       height: auto;
+       padding-left: 0px;
+     }
+
+     .skill-item {
+          width: 50%;
+     }
+     
+     #skills-section div {
+       width: 100%;
+       margin: 0 auto;
+     }
+     
+     #skills-section h2 {
+       font-size: 24px;
+       text-align: center;
+     }
+     
+     #skills-section h3 {
+       font-size: 18px;
+       margin-bottom: 10px;
+     }
+     
+     #skills-section p {
+       font-size: 16px;
+     }
+
+     form {
+          width: 90%;
+   }
+}
